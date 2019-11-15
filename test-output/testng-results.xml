@@ -1,33 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="162013" started-at="2019-11-15T01:29:19 UTC" finished-at="2019-11-15T01:32:01 UTC">
+  <suite name="Default suite" duration-ms="93279" started-at="2019-11-15T15:20:50 UTC" finished-at="2019-11-15T15:22:23 UTC">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="162013" started-at="2019-11-15T01:29:19 UTC" finished-at="2019-11-15T01:32:01 UTC">
+    <test name="Default test" duration-ms="93279" started-at="2019-11-15T15:20:50 UTC" finished-at="2019-11-15T15:22:23 UTC">
       <class name="com.ae.TestAEusingTestNG">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.ae.TestAEusingTestNG@f09733f]" name="init" is-config="true" duration-ms="15636" started-at="2019-11-15T01:29:19 UTC" finished-at="2019-11-15T01:29:34 UTC">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.ae.TestAEusingTestNG@f09733f]" name="init" is-config="true" duration-ms="14429" started-at="2019-11-15T15:20:50 UTC" finished-at="2019-11-15T15:21:04 UTC">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="SearchProduct()[pri:0, instance:com.ae.TestAEusingTestNG@f09733f]" name="SearchProduct" duration-ms="8232" started-at="2019-11-15T01:29:34 UTC" finished-at="2019-11-15T01:29:43 UTC">
+        <test-method status="PASS" signature="SearchProduct()[pri:0, instance:com.ae.TestAEusingTestNG@f09733f]" name="SearchProduct" duration-ms="8002" started-at="2019-11-15T15:21:04 UTC" finished-at="2019-11-15T15:21:12 UTC">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchProduct -->
-        <test-method status="PASS" signature="AddProductToCard()[pri:0, instance:com.ae.TestAEusingTestNG@f09733f]" name="AddProductToCard" duration-ms="25517" started-at="2019-11-15T01:29:43 UTC" depends-on-methods="com.ae.TestAEusingTestNG.SearchProduct" finished-at="2019-11-15T01:30:08 UTC">
+        <test-method status="PASS" signature="AddProductToCard()[pri:0, instance:com.ae.TestAEusingTestNG@f09733f]" name="AddProductToCard" duration-ms="24998" started-at="2019-11-15T15:21:12 UTC" depends-on-methods="com.ae.TestAEusingTestNG.SearchProduct" finished-at="2019-11-15T15:21:37 UTC">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddProductToCard -->
-        <test-method status="PASS" signature="CheckoutCard()[pri:0, instance:com.ae.TestAEusingTestNG@f09733f]" name="CheckoutCard" duration-ms="92810" started-at="2019-11-15T01:30:08 UTC" depends-on-methods="com.ae.TestAEusingTestNG.AddProductToCard" finished-at="2019-11-15T01:31:41 UTC">
+        <test-method status="PASS" signature="CheckoutCard()[pri:0, instance:com.ae.TestAEusingTestNG@f09733f]" name="CheckoutCard" duration-ms="19038" started-at="2019-11-15T15:21:37 UTC" depends-on-methods="com.ae.TestAEusingTestNG.AddProductToCard" finished-at="2019-11-15T15:21:56 UTC">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckoutCard -->
-        <test-method status="PASS" signature="PlaceOrder()[pri:0, instance:com.ae.TestAEusingTestNG@f09733f]" name="PlaceOrder" duration-ms="15923" started-at="2019-11-15T01:31:42 UTC" depends-on-methods="com.ae.TestAEusingTestNG.CheckoutCard" finished-at="2019-11-15T01:31:58 UTC">
+        <test-method status="PASS" signature="PlaceOrder()[pri:0, instance:com.ae.TestAEusingTestNG@f09733f]" name="PlaceOrder" duration-ms="13716" started-at="2019-11-15T15:21:56 UTC" depends-on-methods="com.ae.TestAEusingTestNG.CheckoutCard" finished-at="2019-11-15T15:22:10 UTC">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PlaceOrder -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.ae.TestAEusingTestNG@f09733f]" name="quit" is-config="true" duration-ms="2959" started-at="2019-11-15T01:31:58 UTC" finished-at="2019-11-15T01:32:01 UTC">
+        <test-method status="PASS" signature="TestPaymentType()[pri:0, instance:com.ae.TestAEusingTestNG@f09733f]" name="TestPaymentType" duration-ms="11052" started-at="2019-11-15T15:22:10 UTC" depends-on-methods="com.ae.TestAEusingTestNG.PlaceOrder" finished-at="2019-11-15T15:22:21 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestPaymentType -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.ae.TestAEusingTestNG@f09733f]" name="quit" is-config="true" duration-ms="1930" started-at="2019-11-15T15:22:21 UTC" finished-at="2019-11-15T15:22:23 UTC">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->

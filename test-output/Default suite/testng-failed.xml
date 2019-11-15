@@ -11,6 +11,7 @@
           <include name="CheckoutCard"/>
           <include name="PlaceOrder"/>
           <include name="quit"/>
+          <include name="TestPaymentType"/>
         </methods>
       </class> <!-- com.ae.TestAEusingTestNG -->
     </classes>

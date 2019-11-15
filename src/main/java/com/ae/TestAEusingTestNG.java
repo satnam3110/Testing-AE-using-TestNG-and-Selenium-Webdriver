@@ -38,7 +38,7 @@ public class TestAEusingTestNG {
 	  
 	  @Test(dependsOnMethods = { "SearchProduct" }) public void AddProductToCard()
 	  throws Exception { th.sleep(5000);
-	  driver.findElement(By.cssSelector("div.product-tile:nth-child(3)")).click();
+	  driver.findElement(By.cssSelector("div.product-tile:nth-child(2)")).click();
 	  System.out.println("adding going on");
 	  js.executeScript("window.scrollBy(0,300)");
 	  th.sleep(5000);
@@ -77,10 +77,25 @@ public class TestAEusingTestNG {
 		driver.findElement(By.name("states")).click();
 		th.sleep(5000);		
 		driver.findElement(By.cssSelector("option.ember-view:nth-child(1)")).click();
+		driver.findElement(By.cssSelector("input.form-control.form-input-postal-code.ember-text-field.ember-view")).click();
 		System.out.println("order placed");		
 		
 	}
 
+	@Test(dependsOnMethods = { "PlaceOrder" })
+	public void TestPaymentType() throws Exception {
+		driver.findElement(By.className("selectable-option-text")).click();
+		driver.findElement(By.cssSelector("input.form-control.form-input-card-number.ember-text-field.ember-view")).sendKeys("1234432112343211");
+		driver.findElement(By.cssSelector("input.form-control.form-input-expiration-date.ember-text-field.ember-view")).sendKeys("02/25");
+		driver.findElement(By.cssSelector("input.form-control.form-input-security-code.ember-text-field.ember-view")).sendKeys("785");
+		driver.findElement(By.cssSelector("input.form-control.form-input-phone-number.ember-text-field.ember-view")).sendKeys("6362360221");
+		System.out.println("placeorder is here");
+		th.sleep(5000);		
+		driver.findElement(By.cssSelector("div.payment-method-btn.payment-method-paypal-btn.col-xs-6.col-xs-height.col-top")).click();
+		driver.findElement(By.cssSelector("input.form-control.form-input-email.ember-text-field.ember-view")).sendKeys("ssingh_1980@yahoo.com");
+		driver.findElement(By.cssSelector("iframe.zoid-component-frame.zoid-visible")).click();
+	}
+	
 	@AfterClass
 	public void quit() {
 		driver.close();
